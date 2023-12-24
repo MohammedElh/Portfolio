@@ -1,0 +1,33 @@
+  [
+    {
+      "title": "Rentlify",
+      "description": "Effortless Booking, Unforgettable Experiences",
+      "image": "/projectImages/rentlify-mockup.png",
+      "image2": "/projectImages/family.webp",
+      "body": "Rentlify, a project to simplify house bookings in Morocco, was developed collaboratively by a dedicated team of three members, including myself. Our combined efforts ensured a user-centric approach to address the challenges faced by renters and hosts.\nChoosing the MERN stack, our team created Rentlify, offering a secure and scalable platform. Together, we navigated challenges specific to the Moroccan rental market, addressing issues such as unclear communication and trust. Noteworthy features like intuitive search, and secure bookings were seamlessly integrated to enhance the overall user experience.\nWhile not launched yet, Rentlify anticipates a successful introduction with standout features, aiming for a timely release and positive user feedback. With an emphasis on efficiency and user-friendliness, Rentlify aspires to simplify the rental process for Moroccans and positively impact the local housing market.",
+      "technologies": [
+        "React.js",
+        "Tailwind",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+      "github": "https://github.com/MohammedElh/Rentlify",
+      "deployed": "https://rentlify.vercel.app/",
+      "bgcolor": "#5F19EB",
+      "id": "1"
+    },
+    {
+      "title": "Weather",
+      "description": "Weather Forecast",
+      "image": "/projectImages/upnext-mockup.png",
+      "image2": "/projectImages/marketing.jpg",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "body": " I created a user-friendly design for a digital marketing website using HTML and CSS. The goal was to make the website look good and work well on different devices, like phones and computers. It's a small but important start to make the website easy to use and attractive for everyone.",
+      "bgcolor": "#FFFF00",
+      "id": "2"
+    }
+  ]
