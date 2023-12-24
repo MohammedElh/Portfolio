@@ -18,8 +18,7 @@ const Hero = ({ name }) => {
       bottom: "0",
       opacity: "0.3",
       mixBlendMode: "lighten",
-      height: "50%",
-      top: "35%",
+      height: "80%",
     },
 
     textContainer: {
@@ -30,14 +29,12 @@ const Hero = ({ name }) => {
       zIndex: "1",
       color: "#fff",
       textShadow: "1px 1px 3px #000",
-      marginLeft: "-300px",
-
     },
 
     name: {
       color: "var(--text-color)",
-      fontWeight: "600",
-      marginTop: "-150px",
+      fontWeight: "700",
+      marginTop: "-100px",
       paddingBottom: "28px",
     },
   };
@@ -68,7 +65,7 @@ const Hero = ({ name }) => {
               cursor: "",
             }}
             onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString("FULL-STACK MERN Developer").start();
+              typewriter.changeDelay(50).typeString("Software Engineer").start();
             }}
           />
         </motion.div>
@@ -78,7 +75,7 @@ const Hero = ({ name }) => {
         <motion.img
           className="landingImage"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0.5 }}
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}

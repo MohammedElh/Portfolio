@@ -3,18 +3,18 @@ import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import aboutMeImg from "../images/aboutme.jpg";
-
 /**
  * Represents the About Me section.
  * Displays information about the user.
  * Not currently in use.
- *
- * @component
- * @param {string} name - The name of the user.
- */
+*
+* @component
+* @param {string} name - The name of the user.
+*/
 
 const AboutMe = ({ name }) => {
   // Using react-intersection-observer to determine if the component is in view
+  const cvFileUrl = "https://drive.google.com/file/d/1_SVfWgHMo2R_vHXpL6LYvvDiHQwXWQIQ/view?usp=sharing";
   const [ref, inView] = useInView({
     threshold: 0.4,
     triggerOnce: true,
@@ -68,13 +68,13 @@ const AboutMe = ({ name }) => {
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
                   I'm still finding my way in the vast world of coding,
-                  diving into the <span style={{ color: "var(--hl-color)" }}>MERN stack </span>with 
+                  diving into the <span style={{ color: "var(--hl-color)" }}>MERN stack </span>with
                   <span style={{ color: "var(--hl-color)" }}> MongoDB, </span>
                   <span style={{ color: "var(--hl-color)" }}>Express.js </span>,
                   <span style={{ color: "var(--hl-color)" }}> React.js</span>, and
                   <span style={{ color: "var(--hl-color)" }}> Node.js</span>.
                   My coding journey is a work in progress,
-                  but I'm passionate about<span style={{ color: "var(--hl-color)" }}> learning</span> and 
+                  but I'm passionate about<span style={{ color: "var(--hl-color)" }}> learning</span> and
                   <span style={{ color: "var(--hl-color)" }}> growing </span>in the tech space.
                 </motion.p>
                 <br />
@@ -87,9 +87,14 @@ const AboutMe = ({ name }) => {
               </motion.div>
 
               {/* Button to view the portfolio */}
-              <NavLink to="/portfolio">
-                <Button name="View Portfolio" />
-              </NavLink>
+              <div className="aboutme-btns"> 
+                <NavLink to="/portfolio">
+                  <Button name="View Portfolio" />
+                </NavLink>
+                <NavLink to={cvFileUrl} target="_blank" download>
+                  <Button name="Download CV"/>
+                </NavLink>
+              </div>
             </motion.div>
           </div>
         </div>

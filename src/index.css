@@ -311,3 +311,7 @@ footer .socialIcons {
     display: inline-block;
   }
 }
+.aboutme-btns{
+  display: flex;
+  gap:10px;
+}
