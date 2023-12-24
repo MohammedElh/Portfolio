@@ -150,7 +150,7 @@ const Form = () => {
       initial={{ y: "10vw", opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Send a Message</h4>
       {/* Input fields */}
